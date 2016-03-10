@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<style>
+    .text {
+        position: absolute;
+        top: 40%;
+        left: 0;
+        width: 100%;
+        color: #ffffff;
+        text-shadow: black 1px 1px;
+        z-index: 3;
+    }
+
+    .category {
+        transition: 0.25s ease-in-out;
+        transform: scale(1.0);
+    }
+
+    .category:hover {
+        transform: scale(1.05);
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+</style>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 text-center">
+            <h2>Welchen Raum willst du umgestalten?</h2>
+            <br>
+            <br>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2 columns"></div>
+        <div class="col-sm-12 col-md-8 columns">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4" >
+                    <div class="overlay-fade-in" >
+                        <div class="category">
+                            <img class="img img-responsive" alt="" src="http://go.furnitects.com/api/images/questions/categories/2.jpg">
+                            <div class="text-center text">
+                                <h2>Wohnzimmer</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4" >
+                    <div class="overlay-fade-in" >
+                        <div class="category">
+                            <img class="img img-responsive" alt="" src="http://go.furnitects.com/api/images/questions/categories/26.jpg">
+                            <div class="text-center text">
+                                <h2>Schlafzimmer</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4" >
+                    <div class="overlay-fade-in" >
+                        <div class="category">
+                            <img class="img img-responsive" alt="" src="http://go.furnitects.com/api/images/questions/categories/46.jpg">
+                            <div class="text-center text">
+                                <h2>Esszimmer</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4" >
+                    <div class="overlay-fade-in" >
+                        <div class="category">
+                            <img class="img img-responsive" alt="" src="http://go.furnitects.com/api/images/questions/categories/66.jpg">
+                            <div class="text-center text">
+                                <h2>Büro</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4" >
+                    <div class="overlay-fade-in" >
+                        <div class="category">
+                            <img class="img img-responsive" alt="" src="http://go.furnitects.com/api/images/questions/categories/81.jpg">
+                            <div class="text-center text">
+                                <h2>Flur</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4" >
+                    <div class="overlay-fade-in" >
+                        <div class="category">
+                            <img class="img img-responsive" alt="" src="http://go.furnitects.com/api/images/questions/categories/98.jpg">
+                            <div class="text-center text">
+                                <h2>Kinderzimmer</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-2 columns"></div>
+        <div class="col-sm-12 col-md-8 columns">
+            <div class="row">
+                <div class="col-lg-8"></div>
+                <a style="color: white;" href="material.html">
+                    <div class="col-lg-4 text-center" style="background-color: #428bca; height: 80px; transform: scale(0.935)">
+                        <h2>
+                            Nächster Schritt
+                        </h2>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('.category').click(
+        function () {
+            $(this).append('<img src="http://go.furnitects.com/img/tick.png" style="position: absolute; top: 0; z-index: 2; left: 15%;">');
+        }
+    );
+</script>
+
+</body>
+</html>
